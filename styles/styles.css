@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 /*////////////////////////////////////////////////////////////////////////
 Table of Contents:
     1. Global Styles
@@ -9,20 +11,60 @@ Table of Contents:
         3.4 Faq
         3.5 Footer
 ////////////////////////////////////////////////////////////////////////*/
-
+/*grijs #899CA0*/
+/*donkergroen #1C2B32*/
 
 
 /*////////////////////////
     1. Global Styles
 ////////////////////////*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color:#899CA0;
+}
+
+a:hover {
+    text-decoration-line: none;
+}
 
 
+.faq:hover {
+    cursor: pointer;
+}
 
 /*////////////////////////
     2. Typography
 ////////////////////////*/
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #1C2B32;
+}
+
+.dome-section h1 {
+    font-family: 'Poppins', Semi-bold;
+    font-size: 120px;
+
+}
 
 
+h2 {
+    text-align: center;
+    font-weight: 700;
+    padding: 30px 0 30px  0;
+
+}
+
+
+
+p {
+    font-family: 'Poppins';
+    font-weight: 300;
+}
 
 /*////////////////////////
     3. Areas
@@ -31,19 +73,180 @@ Table of Contents:
 
 
 /*///////////// 3.1 Header /////////////*/
+header {
+    background: url("../assets/images/mountains.jpg") no-repeat center local;
+    background-size: cover;
+    height: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+.dome-section {
+    margin: auto;
+    padding: 40px 20px 20px 20px;
+
+}
+input,
+button {
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 200;
+    margin-left: -4px;
+    margin-top: 40px;
+    padding: 20px 20px 20px 20px ;
+}
+
+.dome-input {
+    border-color: #1C2B32;
+    color: #1C2B32;
+    background: transparent;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    width: 400px;
+}
+
+.dome-button {
+    color: #fff;
+    font-weight: 200;
+    background-color: #1C2B32;
+    border-color: #1C2B32;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+
+input::placeholder  {
+    color: black;
+    padding-left: 15px;
+    margin: auto;
+    font-weight: 200;
+}
+
+
+
+
 
 
 
 /*///////////// 3.2 Testimonial /////////////*/
 
+main {
+    max-width: 1000px;
+    margin: auto;
+
+}
+
+.testimonial-article {
+
+    border-radius: 10px;
+    max-width: 100%;
+    background-color: white;
+    color: #1C2B32;
+    font-weight: 200;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.16 );
+    padding: 40px 40px 40px 40px;
+    margin-top: 40px;
+
+}
+
+.rev-photo{
+    width: 44px;
+    height: 44px;
+}
+
+.rev-quote {
+    width: 30px;
+    height: 30px;
+}
+
+.quote {
+    display: flex;
+}
+
+blockquote {
+    padding-left: 20px;
+}
+
+
+
+.jane {
+    display: inline-block;
+    padding-left: 40px;
+    padding-top:  20px;
+
+
+}
+
+.john {
+    display: inline-block;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+em {
+    padding: 10px;
+
+
+}
 
 
 /*///////////// 3.3 Support /////////////*/
 
+.seven-days {
+    padding: 30px 0 0 0;
+    font-weight: 300;
+}
+
+.call-center {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.contact {
+    background-color: #1C2B32;
+    color: white;
+    font-weight: 400;
+    font-size: 17px;
+    border-radius: 50px;
+    padding: 20px 20px 20px 20px;
+}
 
 
 /*///////////// 3.4 Faq /////////////*/
 
+.faq {
+    line-height: 60px;
+    font-weight: 300;
+}
+
+
+.answers {
+    max-width: 100%;
+    border-radius: 10px;
+    background-color: #899CA0;
+    font-weight: 400;
+    color: white;
+    padding: 40px 50px 40px 50px;
+    margin: 10px 0 0 0;
+    line-height: 26px;
+    text-align: left;
+}
+
+.container {
+    height: 100px;
+    margin: auto;
+}
+/*///////////// 3.5 Footer /////////////*/
+
+.footer {
+    background-color: #1C2B32;
+    background-size: cover;
+    color: white;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+    padding-top: 40px;
+}
 
 
 /*///////////// 3.5 Footer /////////////*/
